@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/*
+!data/.gitkeep
+*.log
+*.tmp
+*.corrupt-*
+.DS_Store
+kenneth-secretary-ai.zip

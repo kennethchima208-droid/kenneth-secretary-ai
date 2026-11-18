@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kenneth Secretary AI</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div id="login" class="login hidden">
+    <form id="login-form" class="card login-card">
+      <div class="brand"><span class="logo">K</span><span>Secretary AI</span></div>
+      <p class="muted">Sign in with your dashboard password.</p>
+      <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
+      <button class="btn primary" type="submit">Sign in</button>
+      <p id="login-error" class="error-text"></p>
+    </form>
+  </div>
+
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo">K</span><span>Secretary AI</span></div>
+      <nav id="nav"></nav>
+      <button class="btn ghost logout" id="logout">Sign out</button>
+    </aside>
+    <main>
+      <header class="topbar"><h1 id="title"></h1><span id="mode-pill" class="pill"></span></header>
+      <div id="view"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
